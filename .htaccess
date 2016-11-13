@@ -1,0 +1,19 @@
+# For security reasons, Option followsymlinks cannot be overridden.
+
+#Options +FollowSymLinks
+
+Options +SymLinksIfOwnerMatch
+
+RewriteEngine On
+
+
+
+DirectoryIndex index.php
+
+
+
+RewriteCond %{HTTP_HOST} !^www\..* [NC]
+
+RewriteCond %{HTTP_HOST} !^[0-9]+\.[0-9]+\..+ [NC]
+
+RewriteRule ^(.*) http://www.%{HTTP_HOST}/$1 [R=301,L]

@@ -1,0 +1,1087 @@
+/*
+* Stylesheet for ChadTylerWalker.com
+* Created on: September 10, 2015
+* Version 0.1
+*/
+
+
+
+
+
+
+
+
+/***************
+***  GLOBAL STYLES
+***************/
+body,html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #eeeeee;
+}
+.margin-fix {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'high_tidesans', sans-serif;
+}
+p {
+    font-family: 'pier', sans-serif;
+}
+.page-title {
+    width: 94%;
+    display: block;
+    float: none;
+    height: 350px;
+    margin: 3% auto;
+}
+.page-title h1 {
+    text-align:center;
+    color: #ffffff;
+    font-size: 60px;
+    vertical-align:middle;
+    padding-top:110px;
+    font-family: 'high_tidebold', sans-serif;
+}
+.no-float {
+    float: none;
+    display:block;
+}
+
+
+
+
+
+
+
+
+/***************
+***  FONTS
+***************/
+
+@font-face {
+    font-family: 'high_tideregular';
+    src: url('../fonts/hightide-webfont.eot');
+    src: url('../fonts/hightide-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/hightide-webfont.woff2') format('woff2'),
+    url('../fonts/hightide-webfont.woff') format('woff'),
+    url('../fonts/hightide-webfont.ttf') format('truetype'),
+    url('../fonts/hightide-webfont.svg#high_tideregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'high_tidesans';
+    src: url('../fonts/hightide_sans-webfont.eot');
+    src: url('../fonts/hightide_sans-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/hightide_sans-webfont.woff2') format('woff2'),
+    url('../fonts/hightide_sans-webfont.woff') format('woff'),
+    url('../fonts/hightide_sans-webfont.ttf') format('truetype'),
+    url('../fonts/hightide_sans-webfont.svg#high_tidesans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'high_tidebold';
+    src: url('../fonts/high_tide_bold-webfont.eot');
+    src: url('../fonts/high_tide_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/high_tide_bold-webfont.woff2') format('woff2'),
+    url('../fonts/high_tide_bold-webfont.woff') format('woff'),
+    url('../fonts/high_tide_bold-webfont.ttf') format('truetype'),
+    url('../fonts/high_tide_bold-webfont.svg#high_tidebold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pier';
+    src: url('../fonts/pier-webfont.eot');
+    src: url('../fonts/pier-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/pier-webfont.woff2') format('woff2'),
+    url('../fonts/pier-webfont.woff') format('woff'),
+    url('../fonts/pier-webfont.ttf') format('truetype'),
+    url('../fonts/pier-webfont.svg#pier_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+/***************
+***  NAVIGATION
+***************/
+.top-bottom-nav {
+    width: 100%;
+    text-align:center;
+    height: 40px;
+    position:fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 1100;
+    overflow: hidden;
+    background: #ffffff;
+}
+.left-right-nav {
+    overflow: hidden;
+    position:fixed;
+    background: #ffffff;
+}
+#top-nav {
+    top: 0;
+    left: 0;
+}
+#bottom-nav {
+    bottom: 0;
+    left: 0;
+}
+.top-bottom-nav p {
+    font-family: 'high_tidebold', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    position:relative;
+    transition: top 200ms;
+    -moz-transition: top 200ms;
+    -webkit-transition: top 200ms;
+    -o-transition: top 200ms;
+    top: 0;
+}
+#top-nav p:hover {
+    top: -5px;
+}
+#bottom-nav p:hover {
+    top: 5px;
+}
+a.nav-link, a.nav-link:link, a.nav-link:visited {
+    color: #434343;
+    transition: color 200ms;
+    -moz-transition: color 200ms;
+    -webkit-transition: color 200ms;
+}
+a.nav-link:hover {
+    color: #13a01b;
+}
+#right-nav {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display:block;
+    width: 40px;
+    height: 100%;
+    margin: 0;
+    text-align:center;
+    z-index: 1100;
+}
+.right-about-container {
+    position:relative;
+    top: 50%;
+    left: 0;
+    z-index: 21;
+    width: 200px;
+    height: 40px;
+    transform: translate(-80px, -50%) rotate(90deg) translate(4px, 0px);
+    -moz-transform: translate(-80px, -50%) rotate(90deg) translate(4px, 0px);
+    -webkit-transform: translate(-80px, -50%) rotate(90deg) translate(4px, 0px);
+    transition: left 200ms;
+    -moz-transition: left 200ms;
+    -webkit-transition: left 200ms;
+}
+.right-about-container:hover {
+    left: 4px;
+}
+#left-nav {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    display:block;
+    width: 40px;
+    height: 100%;
+    margin: 0;
+    text-align:center;
+    z-index: 1100;
+}
+.left-about-container {
+    position:relative;
+    top: 50%;
+    left: 0;
+    z-index: 21;
+    width: 200px;
+    height: 40px;
+    transform: translate(-80px, -50%) rotate(-90deg) translate(4px, 0px);
+    -moz-transform: translate(-80px, -50%) rotate(-90deg) translate(4px, 0px);
+    -webkit-transform: translate(-80px, -50%) rotate(-90deg) translate(4px, 0px);
+    transition: left 200ms;
+    -moz-transition: left 200ms;
+    -webkit-transition: left 200ms;
+}
+.left-about-container:hover {
+    left: -4px;
+}
+.sides-nav {
+    font-family: 'high_tidebold', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    position:relative;
+    transition: translate 200ms;
+    -moz-transition: translate 200ms;
+    -webkit-transition: translate 200ms;
+    width: 170px;
+    text-align:center;
+}
+#nav-container {
+    background: #eeeeee;
+    position:fixed;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+}
+.mobile-nav {
+    width: 100%;
+    height: 80px;
+    background: #ffffff;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    display:none;
+}
+#menu-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#menu-logo {
+    width: 45px;
+    height: 45px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+#menu-collapse {
+    background: #ffffff;
+    padding: 25px 0 15px 0;
+    margin: 0;
+    display:none;
+}
+#menu-collapse ul {
+    text-align:center;
+}
+#menu-collapse ul li {
+    list-style-type: none;
+    font-size: 15px;
+    margin: 9px;
+    text-transform: uppercase;
+    font-family: 'high_tidesans', sans-serif;
+}
+#menu-collapse a, #menu-collapse:link, #menu-collapse:visited {
+    color: #252525;
+    text-decoration:none;
+    transition: color 400ms;
+    -moz-transition: color 400ms;
+    -o-transition: color 400ms;
+    -webkit-transition: color 400ms;
+}
+#menu-collapse a:hover {
+    color: #13a01b;
+}
+#menu-collapse a#current, #menu-collapse a#current:link, #menu-collapse a#current:visited {
+    color: #13a01b;
+}
+
+
+
+
+
+
+
+/***************
+***  HOME
+***************/
+#home-main {
+    min-height: 100%;
+    width: 100%;
+    background: #ffffff;
+    position:relative;
+    overflow:hidden;
+}
+#home-background {
+    width: 94%;
+    margin: 40px;
+    display: flex;
+    height: 94%;
+    background: url(../images/foggy-hills.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    align-items:center;
+    justify-content:center;
+}
+#logo-container {
+    height: 410px;
+    width: 410px;
+    perspective: 800px;
+    -webkit-perspective: 800px;
+}
+#logo-100 {
+    height: 250px;
+    width: 250px;
+    position:absolute;
+    top: 80px;
+    left: 80px;
+    z-index: 40;
+    display:block;
+    transform: translateX(0) translateZ(200px);
+    -moz-transform: translateX(0) translateZ(200px);
+    -webkit-transform: translateX(0) translateZ(200px);
+    -o-transform: translateX(0) translateZ(200px);
+}
+#logo-30 {
+    height: 320px;
+    width: 320px;
+    position:absolute;
+    top: 45px;
+    left: 45px;
+    z-index: 36;
+    transform: translateX(0) translateZ(100px);
+    -moz-transform: translateX(0) translateZ(100px);
+    -webkit-transform: translateX(0) translateZ(100px);
+    -o-transform: translateX(0) translateZ(100px);
+}
+#logo-10 {
+    height: 400px;
+    width: 400px;
+    position:absolute;
+    top: 5px;
+    left: 5px;
+    z-index: 34;
+    transform: translateX(0) translateZ(0px);
+    -moz-transform: translateX(0) translateZ(0px);
+    -webkit-transform: translateX(0) translateZ(0px);
+    -o-transform: translateX(0) translateZ(0px);
+}
+#home-mobile {
+    width: 94%;
+    margin: 0 auto 20px auto;
+    display:  none;
+    float: none;
+    background: url(../images/foggy-hills.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+}
+#mobile-home-logo {
+    height: 150px;
+    width: 150px;
+}
+.mobile-container {
+    display:block;
+    width: 100%;
+    text-align:center;
+}
+.mobile-container h2 {
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+/***************
+***  COMMUNITY CONTRIBUTION MAP
+***************/
+#map-background {
+    background: #eeeeee;
+    margin: 40px;
+}
+#map-title h3 {
+    font-family: 'high_tidebold', sans-serif;
+    font-size: 38px;
+    color: #5f5f5f;
+    line-height: .8;
+    letter-spacing: -1px;
+    display:block;
+    padding: 8px;
+    text-align:left;
+}
+#home-map-input {
+    background: #b0b0b0;
+    border: 0;
+    font-size: 18px;
+    padding: 8px 5px;
+    display:inline-block;
+    font-family: 'pier',serif;
+    vertical-align:top;
+}
+#home-map-input:focus {
+    background: #a7a7a7;
+}
+#home-map-submit {
+    margin-bottom:0;
+    vertical-align:top;
+    /*position:relative;*/
+    /*top:-2px;*/
+    padding: 9px 7px 10px 7px;
+    background: #5f5f5f;
+    text-align:center;
+    font-family: 'pier',sans-serif;
+    color: #ffffff;
+    border-radius: 1px;
+    transition: background 400ms;
+    -moz-transition: background 400ms;
+    -webkit-transition: background 400ms;
+    cursor: pointer;
+}
+#home-map-submit:hover {
+    background: #6c6c6c;
+}
+#home-location-find {
+    text-align:left;
+    font-size:12px;
+    color: #6c6c6c;
+    cursor:pointer;
+    padding-top:5px;
+    transition: color 400ms;
+    -moz-transition: color 400ms;
+    -webkit-transition: color 400ms;
+    margin-bottom: 0;
+}
+#home-location-find:hover {
+    color: #000000;
+}
+#map-overview-container {
+    /*padding-bottom: 50px;*/
+}
+#map-overview {
+    font-family: "pier",serif;
+    font-size: 14px;
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    max-width: 400px;
+}
+#map-container {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+#click-map {
+    padding: 50px 0 5px 0;
+    font-size: 12px;
+    color: #13a01b;
+    text-align:center;
+    margin-bottom: 0;
+}
+#community-map {
+    width: 100%;
+    height: 500px;
+    pointer-events:none;
+}
+#location-error {
+    font-size: 16px;
+    color: #ac0800;
+    font-family: 'high_tidebold', sans-serif;
+    margin-bottom: 0;
+    display: none;
+}
+#location-success {
+    font-size: 16px;
+    color: #13a01b;
+    font-family: 'high_tidebold', sans-serif;
+    margin-bottom: 0;
+    display: none;
+}
+
+
+
+
+
+
+
+/***************
+***  ABOUT
+***************/
+#about-background {
+    background: #eeeeee;
+    margin: 40px;
+}
+#about-title {
+    background: url(../images/snow-on-hill.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.about-container {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+.about-container h2 {
+    font-family: 'pier', sans-serif;
+    font-size: 26px;
+    text-align:center;
+    color: #13a01b;
+}
+.about-section {
+    width: 94%;
+    display: block;
+    float: none !important;
+    margin: 3% auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about-section p {
+    font-family: 'pier', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    display:block;
+    margin: 15px auto;
+    max-width: 900px;
+}
+#home-instagram {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 60px 0;
+}
+#instagram-logo {
+    display:block;
+    margin: 0 auto;
+    height: 75px;
+    width: 75px;
+}
+.instagram-media {
+    display:block;
+    margin:0 auto;
+    margin-top:35px;
+}
+#skills-section {
+    background: #ffffff;
+}
+#skills h2 {
+    margin-bottom: 0;
+}
+#skills-section p {
+    font-size: 13px;
+    color: #4e4e4e;
+    text-align:center;
+    margin-top: 0;
+}
+#skill-list {
+    display:block;
+    width: 98%;
+    float: none;
+    margin: 20px auto;
+    max-width: 800px;
+    padding-top: 20px;
+}
+#skill-list ul li {
+    list-style-type: none;
+    margin: 4px;
+}
+
+
+
+
+
+
+
+/***************
+***  PORTFOLIO
+***************/
+#portfolio-title {
+    background: url(../images/road-in-woods.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+#work {
+    margin: 40px 0 0 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#work h2 {
+    font-family: 'pier', sans-serif;
+    font-size: 24px;
+    text-align:center;
+    padding-bottom: 30px;
+}
+#work-container {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    text-align:center;
+    max-width: 1150px;
+    display:block;
+    float:none;
+    margin: 0 auto;
+}
+.work-grid {
+    height: 225px;
+    margin: 10px;
+    display:inline-block;
+    width: 250px;
+    position:relative;
+    cursor: pointer;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+}
+.work-highlight {
+    width: 250px;
+    height: 225px;
+    text-align:center;
+    cursor:pointer;
+    position:absolute;
+    top: 215px;
+    left: 0;
+    transition: top 600ms;
+    -moz-transition: top 600ms;
+    -webkit-transition: top 600ms;
+    -o-transition: top 600ms;
+}
+.work-grid:hover > .work-highlight {
+    top: 0;
+}
+.work-highlight img {
+    height: 80px;
+    width: 80px;
+    margin-top: 15px;
+}
+.work-highlight p {
+    text-align:center;
+    font-size: 18px;
+    margin: 0;
+    padding: 2px;
+}
+.work-highlight p.work-type {
+    text-align:center;
+    font-size: 14px;
+    margin: 0;
+    padding: 2px;
+    font-family: 'pier', sans-serif;
+}
+.work-highlight hr {
+    width: 100px;
+    height: 1px;
+    border: none;
+    margin: 3px auto;
+    padding: 0;
+    display:block;
+}
+
+.plus-circle {
+    width: 30px;
+    height: 30px;
+    line-height: 29px;
+    font-family: 'high_tidebold', sans-serif;
+    font-size: 25px;
+    border-radius: 50%;
+    margin: 15px auto;
+    display:block;
+}
+#pizza-patron {
+    background: url(../images/work-backgrounds/pizza-patron.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#pizza-patron-circle {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+#pizza-patron-highlight {
+    background: rgba(0,0,0,.9);
+}
+#pizza-patron-highlight p {
+    color: #ffffff;
+}
+#pizza-patron-highlight hr {
+    background: #ffffff;
+}
+#all-me {
+    background: url(../images/work-backgrounds/all-me.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#all-me-circle {
+    color: #000000;
+    border: 1px solid #000000;
+}
+#all-me-highlight {
+    background: rgba(255,255,255,.9);
+}
+#all-me-highlight p {
+    color: #000000;
+}
+#all-me-highlight hr {
+    background: #000000;
+}
+#smileworkshop {
+    background: url(../images/work-backgrounds/smileworkshop.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#smileworkshop-circle {
+    color: #000000;
+    border: 1px solid #000000;
+}
+#smileworkshop-highlight {
+    background: rgba(64,198,181,.9);
+}
+#smileworkshop-highlight img {
+    width: 150px;
+    height: auto;
+}
+#smileworkshop-highlight p {
+    color: #000000;
+}
+#smileworkshop-highlight hr {
+    background: #000000;
+}
+#a1-security-group {
+    background: url(../images/work-backgrounds/a1-security-group.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#a1-security-group-circle {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+#a1-security-group-highlight {
+    background: rgba(45,75,128,.9);
+}
+#a1-security-group-highlight img {
+    width: 150px;
+    height: auto;
+}
+#a1-security-group-highlight p {
+    color: #ffffff;
+}
+#a1-security-group-highlight hr {
+    background: #ffffff;
+}
+#a1-safes {
+    background: url(../images/work-backgrounds/a1-safes.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#a1-safes-circle {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+#a1-safes-highlight {
+    background: rgba(255, 0, 0, 0.90);
+}
+#a1-safes-highlight img {
+    width: 150px;
+    height: auto;
+}
+#a1-safes-highlight p {
+    color: #ffffff;
+}
+#a1-safes-highlight hr {
+    background: #ffffff;
+}
+#a1-locksmith {
+    background: url(../images/work-backgrounds/a1-locksmith.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+#a1-locksmith-circle {
+    color: #000000;
+    border: 1px solid #000000;
+}
+#a1-locksmith-highlight {
+    background: rgba(230, 230, 230, 0.90);
+}
+#a1-locksmith-highlight img {
+    width: 150px;
+    height: auto;
+}
+#a1-locksmith-highlight p {
+    color: #000000;
+}
+#a1-locksmith-highlight hr {
+    background: #000000;
+}
+#project-container {
+    padding: 0;
+    text-align:center;
+    margin: 10px auto 0 auto;
+}
+#project-container div {
+    float: none;
+}
+.single-project {
+    width: 94%;
+    display: block;
+    float: none;
+    margin: 3% auto;
+    padding-bottom: 40px;
+    background: rgba(255,255,255,.9);
+}
+.project-square {
+    width: 250px;
+    height: auto;
+    margin-top: 30px;
+}
+.project-rectangle {
+    width: 325px;
+    height: auto;
+    margin-top: 30px;
+}
+.project-links, .project-description {
+    float: left !important;
+}
+.project-description h4, .project-links h4 {
+    text-align:left;
+    font-size: 22px;
+    color: #13a01b;
+    padding: 20px 20px 2px 20px;
+}
+.project-description hr, .project-links hr {
+    width: 183px;
+    height: 4px;
+    border: none;
+    margin: 3px 20px;
+    padding: 0;
+    display:block;
+    background: #13a01b;
+}
+.project-description p, .project-links p {
+    font-size: 14px;
+    padding: 15px 10px 1px 20px;
+    color: #191919;
+    text-align:left;
+    margin-bottom: 0;
+}
+p.working-for {
+    font-size: 12px;
+    padding: 15px 10px 1px 20px;
+    color: #505050;
+    text-align:left;
+}
+a.website-link, a.website-link:visited, a.website-link:link {
+    width: 150px;
+    padding: 8px 5px;
+    background: rgba(19,160,27,0.75);
+    color: #191919;
+    font-size: 16px;
+    text-align:center;
+    display:block;
+    margin: 20px;
+    transition: background 300ms;
+    -moz-transition: background 300ms;
+    -webkit-transition: background 300ms;
+    -o-transition: background 300ms;
+}
+a.website-link:hover {
+    background: rgba(19,160,27,1);
+}
+.project-links {
+    text-align:left;
+}
+.project-links ul {
+    margin: 20px;
+    padding: 0;
+}
+.project-links ul li {
+    list-style-type: circle;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 6px 0;
+    font-size: 14px;
+    color: #191919;
+    font-family: 'pier', sans-serif;
+}
+.project-hr {
+    width: 183px;
+    height: 1px;
+    border: none;
+    margin: 3px auto;
+    padding: 0;
+    display:block;
+    background: #000000;
+}
+.project-title p {
+    text-align:center;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+#all-me-project, #pizza-patron-project, #smileworkshop-project, #a1-security-group-project, #a1-safes-project, #a1-locksmith-project {
+    display:none;
+}
+
+
+
+
+
+
+/***************
+***  CONTACT
+***************/
+.contact-container {
+    padding-bottom: 75px;
+}
+.contact-divider {
+    width: 74%;
+    margin: 0 auto 50px auto;
+    display:block;
+    height: 2px;
+    background: rgba(19,160,27,.3);
+}
+.contact-container h4 {
+    text-align:center;
+}
+.contact-container ul {
+    margin-top: 40px;
+    margin-left: 0;
+}
+.contact-container ul li {
+    text-align:center;
+    list-style-type: none;
+}
+#name, #email, #message {
+    background: #b0b0b0;
+    border: 0;
+    font-size: 18px;
+    padding: 10px 15px;
+    font-family: 'pier',serif;
+    vertical-align:top;
+    width: 380px;
+    display:block;
+}
+#name:focus, #email:focus, #message:focus {
+    background: #a7a7a7;
+}
+#message {
+    height: 120px;
+}
+.contact-form-submit {
+    margin-bottom:0;
+    vertical-align:top;
+    padding: 9px 7px 10px 7px;
+    background: #5f5f5f;
+    text-align:center;
+    border: 0;
+    font-family: 'pier',sans-serif;
+    color: #ffffff;
+    border-radius: 1px;
+    transition: background 400ms;
+    -moz-transition: background 400ms;
+    -webkit-transition: background 400ms;
+    cursor: pointer;
+}
+.contact-form-submit:hover {
+    background: #6c6c6c;
+}
+#form-container p {
+    margin: 0;
+    padding: 0;
+    color: #ac0800;
+    font-size: 14px;
+    display:none;
+}
+p#submitSuccess {
+    color: #13a01b;
+}
+
+
+
+
+
+
+
+
+/***************
+***  MEDIA QUERIES
+***************/
+
+/****** SMALL AND MEDIUM SCREENS (TABLET & MOBILE) ******/
+@media only screen and (max-width:1024px) {
+    #profile-picture {
+        display: block;
+    }
+    #top-nav, #bottom-nav, #left-nav, #right-nav {
+        display:none;
+    }
+    .mobile-nav {
+        display: block;
+    }
+    #about-background {
+        background: #eeeeee;
+        margin: 0;
+    }
+    #map-background {
+        margin: 0;
+    }
+    .work-highlight {
+        top: 0;
+        left: 0;
+    }
+    #home-main {
+        overflow:auto;
+    }
+    #home-background {
+        display:none;
+    }
+    #home-mobile {
+        display:flex;
+    }
+}
+
+/****** SMALL SCREENS (MOBILE) ******/
+@media only screen and (max-width: 640px) {
+    .page-title {
+        width: 94%;
+        display: block;
+        float: none;
+        height: 250px;
+        margin: 3% auto;
+    }
+    .page-title h1 {
+        text-align:center;
+        color: #ffffff;
+        font-size: 45px;
+        vertical-align:middle;
+        padding-top:80px;
+        font-family: 'high_tidebold', sans-serif;
+    }
+    #name, #email, #message {
+        background: #b0b0b0;
+        border: 0;
+        font-size: 18px;
+        padding: 10px 15px;
+        font-family: 'pier',serif;
+        vertical-align:top;
+        width: 250px;
+        display:block;
+        margin: 12px auto;
+    }
+    .contact-form-submit {
+        margin: 12px auto;
+        display:block;
+    }
+    #work h2 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+
+/****** MOBILE SCREENS (TABLET) ******/
+@media only screen and (min-width: 641px) and (max-width: 1024px) {
+    #mobile-home-logo {
+        height: 250px;
+        width: 250px;
+    }
+}
